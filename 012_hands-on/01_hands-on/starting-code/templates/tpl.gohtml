@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{range .}}
+
+<!-- PUT YOUR CODE HERE TO SHOW THE DATA-->
+<p>AcaYear - {{.AcaYear}}</p>
+<br>
+<p>Term - {{.Fall.Term}}</p>
+{{template "rangeOverCourses" .Fall.Courses}}
+<br>
+<p>Term - {{.Spring.Term}}</p>
+{{template "rangeOverCourses" .Spring.Courses}}
+
+{{end}}
+
+</body>
+</html>

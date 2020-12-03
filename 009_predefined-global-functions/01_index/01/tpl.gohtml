@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{index . 0}}
+    {{index . 1}}
+    {{index . 2}}
+
+    <!--
+        index
+        a func you can use in a template
+        it is a "predefined global function"
+
+        Index returns the result of indexing its first argument be the
+        following arguments. Thus "index x 1 2 3" is, slice, or array.
+
+        https://godoc.org/text/template#hdr-Functions
+    -->
+    <!-- FYI -->
+    This is a go template comment
+    {{/*(index .Wisdom 3).Name*/}}
+
+</body>
+
+</html>
