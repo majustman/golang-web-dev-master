@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+List of restaurant:
+
+{{range .}}
+
+	1. {{.Name}}
+	
+	Menu:
+
+	Breakfast
+
+	{{range .MainMenu.Breakfast}}
+		Name - {{.Name}}
+		Description - {{.Description}}
+		Price - {{.Price}}<br>
+	{{end}}
+
+	Lunch
+
+	{{range .MainMenu.Lunch}}
+		Name - {{.Name}}
+		Description - {{.Description}}
+		Price - {{.Price}}<br>
+	{{end}}
+
+	Dinner
+
+	{{range .MainMenu.Dinner}}
+		Name - {{.Name}}
+		Description - {{.Description}}
+		Price - {{.Price}}<br>
+	{{end}}
+
+{{end}}
+
+
+
+</body>
+</html>
